@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- main - main determines if number is pos, 0 or neg
-* %d : points to a number 
+* main - main determines if number is pos, 0 or neg
+* %d : points to a number
 * Return: return 0 for success
 */
 
