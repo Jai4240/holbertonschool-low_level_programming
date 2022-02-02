@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
  * _isupper - program startup
  * @c: int being evaluated
-(*
+ *
  * Description: checks for an uppercase character
  * and returns `1` if `c` is uppercase
  * and returns `0` otherwise)?
@@ -11,7 +12,6 @@
  */
 
 
-#include "main.h"
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
