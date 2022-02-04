@@ -1,10 +1,11 @@
 /**
-*swap_int description of process: swaps values of a and b
-*@a: pointer
-*@b: second pointer
-*
-*return: (0)
-*/
+ * swap_int - program startup
+ * @a: first pointer being evaluated
+ * @b: second pointer being evaluated
+(*
+ * Description: swaps the value of two integers)?
+ * Return: return (0) is the required function signature
+ */
 
 #include "main.h"
 
