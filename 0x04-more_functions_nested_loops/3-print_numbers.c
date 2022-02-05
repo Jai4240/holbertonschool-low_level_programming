@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_numbers - program startup
- *
- * Description: prints the numbers `0` to `9` followed by a new line)
- * Return: return (0) is the required function signature
- */
+* print_numbers - program startup
+*
+* Description: prints the numbers `0` to `9` followed by a new line
+* Return: return (0) is the required function signature
+*/
 
 void print_numbers(void)
 {
