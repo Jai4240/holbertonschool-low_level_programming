@@ -1,18 +1,14 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _isupper - program startup
+ * isdigits - program startup
  * @c: int being evaluated
  *
- * Description: checks for an uppercase character
- * and returns `1` if `c` is uppercase
- * and returns `0` otherwise)?
- * Return: return (0) exits program successfully, return (1) throws an error
+ * Description: Write a function that checks for a digit (0 through 9).
+ * Return: return 1 if c is a digit, otherwise return 0.
  */
 
-
-int _isupper(int c)
+int isdigits(int c)
 {
 	if (c >= '0' && c <= '9')
 	{
