@@ -4,6 +4,7 @@
 * _strncat - function is similar to the _strcat function, except that
 * @dest: it will use at most n bytes from src;
 * @src: src does not need to be null-terminated if it contains n or more bytes
+* @n: first pointer being evaluated
 * Return:  a pointer to the resulting string dest
 */
 
