@@ -2,7 +2,7 @@
  * *_strcat - program startup
  * @dest: first pointer being evaluated
  * @src: second pointer being evaluated
-(*
+ *
  * Description: concatenates two strings)?
  * Return: return (0) is the required function signature
  */
