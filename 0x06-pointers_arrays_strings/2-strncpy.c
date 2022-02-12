@@ -1,4 +1,4 @@
-#include " holberton.h"
+#include "holberton.h"
 
 /**
  * *_strncpy(char *dest, char *src, int n)
