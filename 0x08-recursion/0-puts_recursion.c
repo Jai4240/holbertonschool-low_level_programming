@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _puts_recursion - program startup
  * @s: pointer that is being evaluated.
@@ -6,18 +8,15 @@
  * Return: (0) is the required function.
  */
 
-#include "main.h"
 void _puts_recursion(char *s)
 {
-  if (*s)
-    {
-      _putchar(*s);
-      
-      _puts_recursion(++s);
-    }
-  else
-    {
-      _putchar('\n');
-    }
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(++s);
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
-
