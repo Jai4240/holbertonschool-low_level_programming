@@ -1,12 +1,21 @@
 #include "main.h"
 
 /**
- *creat_array -
+ * create_array -creates an array of chars and  init with a specialized char
+ * @size: size of array in characters
+ * @c: character to initialize with
+ * Return: pointer to the array or null if size = 0
  *
- * Return:
  */
 
-Char *craete_array(unsigned int size, char c)
+Char *create_array(unsigned int size, char c)
 {
-
+char *a;
+a = &c;
+a = (char *)malloc(4);
+if (size == 0)
+{
+return (NULL);
+}
+return (a);
 }
