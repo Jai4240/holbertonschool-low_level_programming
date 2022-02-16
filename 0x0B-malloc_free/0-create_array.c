@@ -10,12 +10,18 @@
 
 char *create_array(unsigned int size, char c)
 {
-char *a;
-a = &c;
-a = (char *)malloc(4);
-if (size == 0)
-{
-return (NULL);
-}
-return (a);
+	char *a;
+	unsigned int rand;
+
+	a = malloc(sizeof(char) * size);
+
+	if (a == NULL || size == 0)
+	{
+		return (NULL);
+	}
+	for (rand = 0; rand < size; rand++)
+	{
+		a[rand] = c;
+	}
+	return (a);
 }
