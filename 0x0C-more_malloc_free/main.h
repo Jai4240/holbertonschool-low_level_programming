@@ -12,4 +12,4 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 int *int _putchar(char c)
 
-#enddef MAIN_H
+#endif MAIN_H
