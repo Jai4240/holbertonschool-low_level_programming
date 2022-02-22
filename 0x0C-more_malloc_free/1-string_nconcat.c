@@ -10,34 +10,38 @@
   * Return: char *
   */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
-	/* declarations */
 
-	_strcat(char *s1, char *s2)
-{}
-	unsigned int a,b;
-	char *ptr;
+{
+	char *new_space;
+	unsigned int length = n;
+	unsigned int string;
 
 	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	if (a > strlen(s2))
 	{
-	   a = strlen(s2)
-		   }
-        for (a = 0; s1[n]; i++)
-	{}
-	for (b = 0; s2[b] && b < n; b++)
-	{}
-	ptr = malloc((strlen(s1) + n + 1)) * sizeof(char));
-	if (ptr == NULL)
-		return (NULL);
-
-	for (a = 0; s1[a]; a++)
-		ptr[a] = s1[a];
-	for (b = 0; s2[b] && b < n; b++)
-		ptr[a + b] = s2[b];
-	ptr[a + b] = '\0';
-	return (ptr);
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	for (string = 0; s1[string]; string++)
+	{
+		length++;
+	}
+	new_space  = malloc(sizeof(char) * (length + 1));
+	if (new_space == NULL)
+	{
+		return NULL;
+	}
+	length = 0;
+	for (string = 0; s1[string]; string++)
+	{
+		new_space[length++] = s1[string];
+	}
+	for (string = 0; s2[string] && string < n; string++)
+	{
+		new_space[length++] = s2[string];
+	}
+	new_space[length] = '\0';
+	return (new_space);
 }
