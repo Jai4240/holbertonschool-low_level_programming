@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+
 /**
   * string_nconcat - a function that concatenates two strings
   * @s1: string to be appended to
@@ -13,7 +15,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	unsigned int length = n;
+	unsigned int length;
 	unsigned int string;
 
 	if (s1 == NULL)
@@ -24,6 +26,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
+	if (n > strlen(s2))
+	{
+		n=strlen(s2);
+	}
+	length = n;
 	for (string = 0; s1[string]; string++)
 	{
 		length++;
