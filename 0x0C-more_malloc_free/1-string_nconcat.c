@@ -1,18 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
-
 /**
   * string_nconcat - a function that concatenates two strings
   * @s1: string to be appended to
   * @s2: string to have n bytes appended
   * @n: number of bytes to append to string 1
-  * Return: char *
+  *
+  *Description: concatenates two strings
+  *Return: return (0) is required function
   */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
 
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *new_space;
+	char *concat;
 	unsigned int length = n;
 	unsigned int string;
 
@@ -28,20 +28,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		length++;
 	}
-	new_space  = malloc(sizeof(char) * (length + 1));
-	if (new_space == NULL)
+	concat = malloc(sizeof(char) * (length + 1));
+	if (concat == NULL)
 	{
 		return NULL;
 	}
 	length = 0;
 	for (string = 0; s1[string]; string++)
 	{
-		new_space[length++] = s1[string];
+		concat[length++] = s1[string];
 	}
 	for (string = 0; s2[string] && string < n; string++)
 	{
-		new_space[length++] = s2[string];
+		concat[length++] = s2[string];
 	}
-	new_space[length] = '\0';
-	return (new_space);
+	concat[length] = '\0';
+	return (concat);
 }
