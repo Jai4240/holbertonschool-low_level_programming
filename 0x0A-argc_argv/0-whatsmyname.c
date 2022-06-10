@@ -3,7 +3,7 @@
 
 /**
   * main - Entry Point
-  * @argc: number of arguments
+  * @argc: number of arguments total
   * @argv: vector of arguments
   * Return: int
   */
