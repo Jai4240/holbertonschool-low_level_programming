@@ -1,10 +1,10 @@
 /**
  * *_strcat - program startup
- * @dest: first pointer being evaluated
- * @src: second pointer being evaluated
+ * @dest: first pointer  evaluated
+ * @src: second pointer  evaluated
  *
- * Description: concatenates two strings)?
- * Return: return (0) is the required function signature
+ * Description: concatenates two strings
+ * Return: return (0) 
  */
 
 #include "holberton.h"
