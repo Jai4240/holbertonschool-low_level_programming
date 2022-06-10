@@ -2,7 +2,7 @@
 
 /**
  * *_strncpy - (char *dest, char *src, int n)
- * @dest: first pointer being evaluated
+ * @dest: first pointer  evaluated
  * @src: second pointer being used
  * @n: int being used
  *
