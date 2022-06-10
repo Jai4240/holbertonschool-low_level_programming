@@ -7,7 +7,7 @@
  * @n: int being used
  *
  * description: copies two strings
- * Return: return (0) is the required function
+ * Return: return (0) required function
  */
 
 char *_strncpy(char *dest, char *src, int n)
